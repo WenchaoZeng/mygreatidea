@@ -1,0 +1,8 @@
+D:\workspace\MyGreatIdea\Test\bin\Release\Test.exe
+D:\workspace\MyGreatIdea\Test\bin\Release\Test.pdb
+D:\workspace\MyGreatIdea\Test\obj\x86\Release\ResolveAssemblyReference.cache
+D:\workspace\MyGreatIdea\Test\obj\x86\Release\Test.exe
+D:\workspace\MyGreatIdea\Test\obj\x86\Release\Test.pdb
+D:\workspace\MyGreatIdea\Test\bin\Release\name.zwc.Caller.Handlers.MyGreatIdea.dll
+D:\workspace\MyGreatIdea\Test\bin\Release\name.zwc.Caller.Handlers.MyGreatIdea.pdb
+D:\workspace\MyGreatIdea\Test\bin\Release\MyGreatIdea.mdb
