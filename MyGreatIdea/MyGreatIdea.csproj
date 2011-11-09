@@ -41,7 +41,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MyGreatIdea.mdb">
+    <Content Include="IMG_20111108_220713.jpg" />
+    <Content Include="IMG_20111108_220849.jpg" />
+    <Content Include="IMG_20111108_220933.jpg" />
+    <Content Include="App_Data\MyGreatIdea.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
