@@ -1,5 +1,0 @@
-D:\workspace\MyGreatIdea\Test\bin\Debug\Test.exe
-D:\workspace\MyGreatIdea\Test\bin\Debug\Test.pdb
-D:\workspace\MyGreatIdea\Test\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\workspace\MyGreatIdea\Test\obj\x86\Debug\Test.exe
-D:\workspace\MyGreatIdea\Test\obj\x86\Debug\Test.pdb

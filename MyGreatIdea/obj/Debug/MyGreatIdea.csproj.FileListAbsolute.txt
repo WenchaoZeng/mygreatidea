@@ -1,5 +1,0 @@
-D:\workspace\MyGreatIdea\MyGreatIdea\bin\Debug\name.zwc.Caller.Handlers.MyGreatIdea.dll
-D:\workspace\MyGreatIdea\MyGreatIdea\bin\Debug\name.zwc.Caller.Handlers.MyGreatIdea.pdb
-D:\workspace\MyGreatIdea\MyGreatIdea\obj\Debug\ResolveAssemblyReference.cache
-D:\workspace\MyGreatIdea\MyGreatIdea\obj\Debug\name.zwc.Caller.Handlers.MyGreatIdea.dll
-D:\workspace\MyGreatIdea\MyGreatIdea\obj\Debug\name.zwc.Caller.Handlers.MyGreatIdea.pdb
