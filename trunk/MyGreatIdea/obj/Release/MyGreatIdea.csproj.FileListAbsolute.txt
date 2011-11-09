@@ -1,0 +1,11 @@
+C:\Users\ZengWenchao\AppData\Local\Temporary Projects\MyGreatIdea\bin\Release\name.zwc.Caller.Handlers.MyGreatIdea.dll
+C:\Users\ZengWenchao\AppData\Local\Temporary Projects\MyGreatIdea\bin\Release\name.zwc.Caller.Handlers.MyGreatIdea.pdb
+C:\Users\ZengWenchao\AppData\Local\Temporary Projects\MyGreatIdea\obj\Release\ResolveAssemblyReference.cache
+C:\Users\ZengWenchao\AppData\Local\Temporary Projects\MyGreatIdea\obj\Release\name.zwc.Caller.Handlers.MyGreatIdea.dll
+C:\Users\ZengWenchao\AppData\Local\Temporary Projects\MyGreatIdea\obj\Release\name.zwc.Caller.Handlers.MyGreatIdea.pdb
+D:\workspace\MyGreatIdea\MyGreatIdea\obj\Release\ResolveAssemblyReference.cache
+D:\workspace\MyGreatIdea\MyGreatIdea\bin\Release\name.zwc.Caller.Handlers.MyGreatIdea.dll
+D:\workspace\MyGreatIdea\MyGreatIdea\bin\Release\name.zwc.Caller.Handlers.MyGreatIdea.pdb
+D:\workspace\MyGreatIdea\MyGreatIdea\obj\Release\name.zwc.Caller.Handlers.MyGreatIdea.dll
+D:\workspace\MyGreatIdea\MyGreatIdea\obj\Release\name.zwc.Caller.Handlers.MyGreatIdea.pdb
+D:\workspace\MyGreatIdea\MyGreatIdea\bin\Release\MyGreatIdea.mdb
