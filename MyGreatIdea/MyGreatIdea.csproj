@@ -32,11 +32,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="fastJSON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\fastJSON.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Entities\Comment.cs" />
+    <Compile Include="Entities\Idea.cs" />
     <Compile Include="MyGreatIdea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -45,9 +53,12 @@
     <Content Include="IMG_20111108_220849.jpg" />
     <Content Include="IMG_20111108_220933.jpg" />
     <Content Include="App_Data\MyGreatIdea.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="lib\fastJSON.dll" />
+    <Content Include="lib\fastJSON.pdb" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
