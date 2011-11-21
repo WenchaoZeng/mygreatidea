@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <RelativeLayout android:layout_width="fill_parent" android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:gravity="left">
+        <Button android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_width="80dp" android:id="@+id/buttonSubmitComment" android:text="@string/submit_comment"></Button>
+        <Button android:text="@string/back" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_width="80dp" android:id="@+id/buttonReturn"></Button>
+    </RelativeLayout>
+    <include android:id="@+id/include_idea" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" layout="@layout/idea_item">
+    </include>
+    <ListView android:id="@+id/listViewComments" android:layout_height="wrap_content" android:layout_width="fill_parent"></ListView>
+</LinearLayout>

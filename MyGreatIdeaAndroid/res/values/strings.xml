@@ -2,4 +2,13 @@
 <resources>
     <string name="hello">Hello World, MyGreatIdeaAndroidActivity!</string>
     <string name="app_name">MyGreatIdeaAndroid</string>
+    <string name="back">返回</string>
+    <string name="submit">提交</string>
+    <string name="title">标题</string>
+    <string name="content">内容</string>
+    <string name="submit_idea">发布想法</string>
+    <string name="refresh">刷新</string>
+    <string name="comment_content">评论内容</string>
+    <string name="submit_comment">发表评论</string>
+    <string name="comment">评论</string>
 </resources>
