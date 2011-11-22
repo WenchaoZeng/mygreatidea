@@ -11,4 +11,8 @@
     <string name="comment_content">评论内容</string>
     <string name="submit_comment">发表评论</string>
     <string name="comment">评论</string>
+    <string name="user_name">姓名</string>
+    <string name="user_contact">联系方式(Email, QQ, MSN或者其他联系方式)</string>
+    <string name="setting_note">在发布想法或者评论之前, 请先设置个人信息.</string>
+    <string name="setting">账号</string>
 </resources>
