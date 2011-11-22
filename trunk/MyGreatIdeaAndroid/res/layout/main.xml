@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:weightSum="1" android:layout_width="fill_parent" android:id="@+id/relativeLayout2" android:layout_height="fill_parent">
     <Button android:layout_height="wrap_content" android:id="@+id/buttonSubmitIdea" android:text="@string/submit_idea" android:layout_width="80dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></Button>
-    <Button android:layout_height="wrap_content" android:id="@+id/button1" android:text="@string/refresh" android:layout_width="80dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"></Button>
+    <Button android:layout_height="wrap_content" android:text="@string/refresh" android:layout_width="80dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:id="@+id/buttonRefresh"></Button>
     <ListView android:id="@+id/listViewIdeas" android:layout_width="fill_parent" android:layout_below="@+id/buttonSubmitIdea" android:layout_alignParentLeft="true" android:layout_height="fill_parent" android:layout_above="@+id/linearLayout2"></ListView>
     <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_alignParentBottom="true">
 	     <Button android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/button2" android:text="Button" android:layout_width="wrap_content"></Button>
 	     <Button android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/button4" android:text="Button" android:layout_width="wrap_content"></Button>
-	     <Button android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/button3" android:text="Button" android:layout_width="wrap_content"></Button>
+	     <Button android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/setting" android:id="@+id/buttonSetting"></Button>
 	     <Button android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/button5" android:text="Button" android:layout_width="wrap_content"></Button>
     </LinearLayout>
 </RelativeLayout>

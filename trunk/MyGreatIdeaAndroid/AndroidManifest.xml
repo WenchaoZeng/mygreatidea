@@ -12,5 +12,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="MainActivity">
+            <intent-filter>
+                <action android:name="name.zwc.mygreatidea.MainActivity"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="SubmitIdeaActivity">
+            <intent-filter>
+                <action android:name="name.zwc.mygreatidea.SubmitIdeaActivity"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="SettingActivity">
+            <intent-filter>
+                <action android:name="name.zwc.mygreatidea.SettingActivity"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
