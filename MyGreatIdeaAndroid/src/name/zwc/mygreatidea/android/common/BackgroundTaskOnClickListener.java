@@ -1,4 +1,4 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.common;
 
 import android.app.Activity;
 import android.os.Handler;

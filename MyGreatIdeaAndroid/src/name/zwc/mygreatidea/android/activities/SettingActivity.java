@@ -1,5 +1,7 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.activities;
 
+import name.zwc.mygreatidea.android.R;
+import name.zwc.mygreatidea.android.common.ActivityBase;
 import android.os.Bundle;
 
 public class SettingActivity extends ActivityBase

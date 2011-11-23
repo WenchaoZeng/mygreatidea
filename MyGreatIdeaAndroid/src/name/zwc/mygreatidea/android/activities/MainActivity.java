@@ -1,6 +1,9 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.activities;
 
-import name.zwc.mygreatidea.android.util.Helpers;
+import name.zwc.mygreatidea.android.R;
+import name.zwc.mygreatidea.android.adapters.IdeaListAdapter;
+import name.zwc.mygreatidea.android.common.ActivityBase;
+import name.zwc.mygreatidea.android.common.Helpers;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;

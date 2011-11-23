@@ -1,5 +1,7 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.activities;
 
+import name.zwc.mygreatidea.android.R;
+import name.zwc.mygreatidea.android.common.ActivityBase;
 import name.zwc.mygreatidea.android.entities.Idea;
 import android.os.Bundle;
 

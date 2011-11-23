@@ -1,4 +1,4 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.common;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 
 public abstract class AdapterBase extends BaseAdapter
 {
-	protected Object[] datasource;
+	public Object[] datasource;
 	protected int layoutID;
 	protected LayoutInflater inflater;
 	public AdapterBase(Activity context, int layoutID)

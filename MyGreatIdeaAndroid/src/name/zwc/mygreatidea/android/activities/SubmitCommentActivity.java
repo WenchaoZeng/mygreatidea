@@ -1,6 +1,8 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.activities;
 
-import name.zwc.mygreatidea.android.util.Helpers;
+import name.zwc.mygreatidea.android.R;
+import name.zwc.mygreatidea.android.common.ActivityBase;
+import name.zwc.mygreatidea.android.common.Helpers;
 import android.os.Bundle;
 
 public class SubmitCommentActivity extends ActivityBase
@@ -11,7 +13,8 @@ public class SubmitCommentActivity extends ActivityBase
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.submit_comment);
 		
-		final int ideaID = Helpers.getValue(getIntent());
+		int index = Helpers.getValue(getIntent());
+		final int ideaID = ideas[index].Id;
 		
 		setReturnButton(R.id.buttonReturn);
 		

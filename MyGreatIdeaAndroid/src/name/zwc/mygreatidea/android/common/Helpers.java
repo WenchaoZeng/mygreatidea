@@ -1,14 +1,9 @@
-package name.zwc.mygreatidea.android.util;
+package name.zwc.mygreatidea.android.common;
 
 import name.zwc.mygreatidea.android.R;
 import name.zwc.mygreatidea.android.entities.Idea;
-import android.R.integer;
 import android.app.Activity;
-import android.app.Application;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.net.Uri;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 

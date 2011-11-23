@@ -1,9 +1,11 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.adapters;
 
 import android.app.Activity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import name.zwc.mygreatidea.android.R;
+import name.zwc.mygreatidea.android.common.AdapterBase;
 import name.zwc.mygreatidea.android.entities.Comment;
 
 public class CommentListAdapter extends AdapterBase
