@@ -9,8 +9,11 @@ import java.net.URLEncoder;
 import java.util.Dictionary;
 import java.util.Enumeration;
 
+import android.R.integer;
+
 import com.google.gson.Gson;
 
+import name.zwc.mygreatidea.android.entities.Comment;
 import name.zwc.mygreatidea.android.entities.Idea;
 
 public class WebService
@@ -71,5 +74,12 @@ public class WebService
 		String response = call("GetIdeas", null, "lastid=" + String.valueOf(lastID));
 		Idea[] ideas = new Gson().fromJson(response, Idea[].class);
 		return ideas;
+	}
+	
+	public Comment[] getComments(int ideaID)
+	{
+		String response = call("GetComments", null, "ideaid=" + String.valueOf(ideaID));
+		Comment[] comments = new Gson().fromJson(response, Comment[].class);
+		return comments;
 	}
 }

@@ -30,6 +30,18 @@
                 <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
         </activity>
+        <activity android:name="IdeaDetailActivity">
+            <intent-filter>
+                <action android:name="name.zwc.mygreatidea.IdeaDetailActivity"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="SubmitCommentActivity">
+            <intent-filter>
+                <action android:name="name.zwc.mygreatidea.SubmitCommentActivity"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

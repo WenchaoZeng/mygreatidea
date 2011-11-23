@@ -1,15 +1,13 @@
 package name.zwc.mygreatidea.android;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
+import name.zwc.mygreatidea.android.util.Helpers;
 import android.os.Bundle;
-import android.widget.Toast;
 
 public class MyGreatIdeaAndroidActivity extends ActivityBase
 {
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) 
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loading);
     }
@@ -23,7 +21,7 @@ public class MyGreatIdeaAndroidActivity extends ActivityBase
 		{
 			public void run()
 			{
-				startActivity("MainActivity");
+				Helpers.startActivity(context, "MainActivity");
 				finish();
 			}
 		}).start();
