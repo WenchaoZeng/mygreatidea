@@ -1,19 +1,11 @@
 package name.zwc.mygreatidea.android;
 
-import name.zwc.mygreatidea.android.entities.Idea;
-import android.R.integer;
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.database.DataSetObserver;
+import name.zwc.mygreatidea.android.util.Helpers;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.View.OnClickListener;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ListAdapter;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class MainActivity extends ActivityBase
 {
@@ -23,39 +15,33 @@ public class MainActivity extends ActivityBase
         setContentView(R.layout.main);
         
         // 发布想法按钮
-        button(R.id.buttonSubmitIdea).setOnClickListener(new OnClickListener()
-		{
-			public void onClick(View v)
-			{
-				startActivity("SubmitIdeaActivity");
-			}
-		});
+        linkButtonToActivity(R.id.buttonSubmitIdea, "SubmitIdeaActivity");
         
         // 设置按钮
-        button(R.id.buttonSetting).setOnClickListener(new OnClickListener()
-		{
-			public void onClick(View v)
-			{
-				startActivity("SettingActivity");
-			}
-		});
+        linkButtonToActivity(R.id.buttonSetting, "SettingActivity");
         
         // 刷新按钮
-        button(R.id.buttonRefresh).setOnClickListener(new OnClickListener()
+        setBackgroundTask(R.id.buttonRefresh, new Runnable()
 		{
-			public void onClick(View v)
+			public void run()
 			{
-				new Thread(new Runnable()
+				// 显示列表
+				IdeaListAdapter adapter = new IdeaListAdapter(context);
+				ideas = service.getIdeas(Integer.MAX_VALUE);
+				adapter.datasource = ideas;
+				setAdapter(R.id.listViewIdeas, adapter);
+				
+				// 点击事件
+				ListView listView = (ListView)findViewById(R.id.listViewIdeas);
+				listView.setOnItemClickListener(new OnItemClickListener()
 				{
-					public void run()
+					public void onItemClick(AdapterView<?> parent, View view, int position, long id)
 					{
-						IdeaListAdapter adapter = new IdeaListAdapter(context);
-						adapter.ideas = service.getIdeas(Integer.MAX_VALUE);
-						ListView listViewIdeas = (ListView)findViewById(R.id.listViewIdeas);
-						listViewIdeas.setAdapter(adapter);
+						Helpers.startActivity(context, "IdeaDetailActivity", position);
 					}
-				}).start();
+				});
 			}
 		});
+        button(R.id.buttonRefresh).performClick();
     }
 }

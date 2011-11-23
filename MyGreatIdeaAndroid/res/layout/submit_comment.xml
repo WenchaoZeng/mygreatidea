@@ -8,5 +8,5 @@
         <Button android:text="@string/back" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_width="80dp" android:id="@+id/buttonReturn"></Button>
     </RelativeLayout>
     <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:id="@+id/TextView01" android:layout_height="wrap_content" android:text="@string/comment_content"></TextView>
-    <EditText android:layout_width="fill_parent" android:inputType="textMultiLine" android:layout_height="fill_parent" android:id="@+id/editTextContent"></EditText>
+    <EditText android:layout_width="fill_parent" android:inputType="textMultiLine" android:layout_height="fill_parent" android:id="@+id/editTextContent" android:gravity="top"></EditText>
 </LinearLayout>

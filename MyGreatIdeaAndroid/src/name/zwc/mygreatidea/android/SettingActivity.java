@@ -1,9 +1,6 @@
 package name.zwc.mygreatidea.android;
 
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 
 public class SettingActivity extends ActivityBase
 {
@@ -18,12 +15,10 @@ public class SettingActivity extends ActivityBase
 		editText(R.id.editTextUserContact).setText(getUserContact());
 		
 		// 提交按钮
-		button(R.id.buttonSubmit).setOnClickListener(new OnClickListener()
+		setBackgroundTask(R.id.buttonSubmit, new Runnable()
 		{
-			public void onClick(View v)
+			public void run()
 			{
-				((Button)v).setEnabled(false);
-
 				// 保存数据
 				String userName = editText(R.id.editTextUserName).getText().toString().trim();
 				setUserName(userName);
