@@ -1,7 +1,10 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.activities;
 
+import name.zwc.mygreatidea.android.R;
+import name.zwc.mygreatidea.android.adapters.CommentListAdapter;
+import name.zwc.mygreatidea.android.common.ActivityBase;
+import name.zwc.mygreatidea.android.common.Helpers;
 import name.zwc.mygreatidea.android.entities.Idea;
-import name.zwc.mygreatidea.android.util.Helpers;
 import android.os.Bundle;
 
 public class IdeaDetailActivity extends ActivityBase

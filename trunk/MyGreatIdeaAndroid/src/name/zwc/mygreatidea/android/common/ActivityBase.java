@@ -1,8 +1,6 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.common;
 
 import name.zwc.mygreatidea.android.entities.Idea;
-import name.zwc.mygreatidea.android.util.Helpers;
-import name.zwc.mygreatidea.android.util.WebService;
 import android.app.Activity;
 import android.app.Application;
 import android.content.SharedPreferences;

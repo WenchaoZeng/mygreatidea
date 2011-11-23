@@ -1,6 +1,5 @@
-package name.zwc.mygreatidea.android;
+package name.zwc.mygreatidea.android.common;
 
-import name.zwc.mygreatidea.android.util.Helpers;
 import android.app.Activity;
 import android.view.View;
 import android.view.View.OnClickListener;
