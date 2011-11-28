@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 
 public abstract class AdapterBase extends BaseAdapter
 {
-	public Object[] datasource;
+	public Object[] datasource = null;
 	protected int layoutID;
 	protected LayoutInflater inflater;
 	public AdapterBase(Activity context, int layoutID)
@@ -19,6 +19,10 @@ public abstract class AdapterBase extends BaseAdapter
 	}
 	public int getCount()
 	{
+		if (datasource == null)
+		{
+			return 0;
+		}
 		return datasource.length;
 	}
 
