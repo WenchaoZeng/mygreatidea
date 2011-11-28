@@ -123,6 +123,7 @@ public class ActivityBase extends Activity
 		{
 			public void onClick(View v)
 			{
+				v.setEnabled(false);
 				context.finish();
 			}
 		});
