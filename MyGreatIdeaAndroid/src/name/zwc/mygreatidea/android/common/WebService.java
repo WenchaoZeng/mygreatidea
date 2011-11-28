@@ -18,14 +18,14 @@ public class WebService
 	{
 		try
 		{
-			// Get参数
+			// The GET parameters.
 			String targetUrl = gateway + "&m=" + method;
 			if (get != null)
 			{
 				targetUrl += "&" + get;
 			}
 
-		    // 发送Post数据
+		    // The POST content.
 		    URL url = new URL(targetUrl);
 		    URLConnection conn = url.openConnection();
 		    if (post != null)
@@ -38,7 +38,7 @@ public class WebService
 			    wr.close();
 		    }
 
-		    // 获取回复
+		    // Read response.
 		    BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 		    StringBuilder builder = new StringBuilder();
 		    String line;
@@ -56,12 +56,16 @@ public class WebService
 			return "";
 		}
 	}
+	protected boolean submit(String method, Object obj)
+	{
+		String post = new Gson().toJson(obj);
+		String response = call(method, post, null);
+		return response.toLowerCase().trim().equals("true");
+	}
 	
 	public boolean submitIdea(Idea idea)
 	{
-		String post = new Gson().toJson(idea);
-		String response = call("AddIdea", post, null);
-		return response.toLowerCase().trim().equals("true");
+	    return submit("AddIdea", idea);
 	}
 	
 	public Idea[] getIdeas(int lastID)
@@ -76,5 +80,10 @@ public class WebService
 		String response = call("GetComments", null, "ideaid=" + String.valueOf(ideaID));
 		Comment[] comments = new Gson().fromJson(response, Comment[].class);
 		return comments;
+	}
+	
+	public boolean submitComment(Comment comment)
+	{
+		return submit("AddComment", comment);
 	}
 }

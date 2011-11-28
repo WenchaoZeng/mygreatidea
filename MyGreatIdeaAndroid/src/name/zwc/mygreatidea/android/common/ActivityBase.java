@@ -29,7 +29,7 @@ public class ActivityBase extends Activity
 	}
 	
 	//
-	// 用户名和联系方式
+	// The user's name and its contact.
 	//
 	protected static String _userName = null;
 	protected String getUserName()
@@ -76,7 +76,7 @@ public class ActivityBase extends Activity
 	}
 	
 	//
-	// 获取和保存用户设置
+	// Retrieve and store user settings.
 	//
 	protected void setPreference(String key, String value)
 	{
@@ -97,10 +97,10 @@ public class ActivityBase extends Activity
 		{
 			switch (msg.what)
 			{
-			case 1: // showInformation
+			case 1: // showInformation method
 				Toast.makeText(context, (String)msg.obj, Toast.LENGTH_SHORT).show();
 				break;
-			case 2: // setAdapter
+			case 2: // setAdapter method
 				ListView listView = (ListView)findViewById(msg.arg1);
 				listView.setAdapter((BaseAdapter)msg.obj);
 				break;
@@ -116,6 +116,11 @@ public class ActivityBase extends Activity
 	protected EditText editText(int viewID)
 	{
 		return (EditText) findViewById(viewID);
+	}
+	protected String getInputText(int viewID)
+	{
+		EditText editText  = (EditText) findViewById(viewID);
+		return editText.getText().toString().trim();
 	}
 	protected void setReturnButton(int viewID)
 	{
@@ -135,6 +140,11 @@ public class ActivityBase extends Activity
 		message.what = 1;
 		message.obj = content;
 		handler.sendMessage(message);
+	}
+	protected void showInformation(int resourceID)
+	{
+		String content = getResources().getString(resourceID);
+		showInformation(content);
 	}
 	protected void linkButtonToActivity(int buttonViewID, String activityName)
 	{

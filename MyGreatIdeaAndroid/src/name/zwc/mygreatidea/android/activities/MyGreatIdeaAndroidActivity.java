@@ -5,6 +5,10 @@ import name.zwc.mygreatidea.android.common.ActivityBase;
 import name.zwc.mygreatidea.android.common.Helpers;
 import android.os.Bundle;
 
+/**
+ * Loading activity
+ * @author ZengWenchao
+ */
 public class MyGreatIdeaAndroidActivity extends ActivityBase
 {
     @Override
