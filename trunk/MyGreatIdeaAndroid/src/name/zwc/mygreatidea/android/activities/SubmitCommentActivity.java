@@ -3,6 +3,7 @@ package name.zwc.mygreatidea.android.activities;
 import name.zwc.mygreatidea.android.R;
 import name.zwc.mygreatidea.android.common.ActivityBase;
 import name.zwc.mygreatidea.android.common.Helpers;
+import name.zwc.mygreatidea.android.entities.Comment;
 import android.os.Bundle;
 
 public class SubmitCommentActivity extends ActivityBase
@@ -22,18 +23,28 @@ public class SubmitCommentActivity extends ActivityBase
 		{
 			public void run()
 			{
-				try
+				// Ensure the user has set its name and contact.
+				if (!ensureSetting())
 				{
-					showInformation(String.valueOf(ideaID));
-					Thread.sleep(2000);
+					return;
 				}
-				catch (InterruptedException ex)
+				
+				Comment comment = new Comment();
+				comment.IdeaId = ideaID;
+				comment.Content = getInputText(R.id.editTextContent);
+				
+				comment.UserName = getUserName();
+				comment.UserContact = getUserContact();
+				
+				if (service.submitComment(comment))
 				{
-					// TODO Auto-generated catch block
-					ex.printStackTrace();
+					showInformation(R.string.submit_success);
+					context.finish();
 				}
-				showInformation("提交成功");
-				context.finish();
+				else
+				{
+					showInformation(R.string.submit_fail);
+				}
 			}
 		});
 	}

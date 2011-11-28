@@ -15,12 +15,12 @@ public class IdeaDetailActivity extends ActivityBase
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.idea_detail);
 		
-		// 显示想法内容
+		// Show idea content
 		int index = Helpers.getValue(getIntent());
 		Idea idea = ideas[index];
 		Helpers.setIdeaView(context.findViewById(R.id.include_idea), idea);
 		
-		// 显示评论列表
+		// Show the comment list.
 		CommentListAdapter adapter = new CommentListAdapter(context);
 		adapter.datasource = service.getComments(idea.Id);
 		setAdapter(R.id.listViewComments, adapter);

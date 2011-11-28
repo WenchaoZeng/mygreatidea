@@ -15,4 +15,9 @@
     <string name="user_contact">联系方式(Email, QQ, MSN或者其他联系方式)</string>
     <string name="setting_note">在发布想法或者评论之前, 请先设置个人信息.</string>
     <string name="setting">账号</string>
+    <string name="set_success">设置成功</string>
+    <string name="submit_success">提交成功</string>
+    <string name="submit_fail">提交失败</string>
+    <string name="please_input_content">请填写内容</string>
+    <string name="please_input_title">请填写标题</string>
 </resources>

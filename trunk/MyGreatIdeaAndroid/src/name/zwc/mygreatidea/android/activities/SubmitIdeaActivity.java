@@ -13,31 +13,31 @@ public class SubmitIdeaActivity extends ActivityBase
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.submit_idea);
 
-		// 提交按钮
+		// The submit button.
 		setBackgroundTask(R.id.buttonSubmit, new Runnable()
 		{
 			public void run()
 			{
-				// 保证用户已经设置了用户名和联系方式
+				// Ensure the user has set its name and contact.
 				if (!ensureSetting())
 				{
 					return;
 				}
 				
-				// 发布想法
+				// Submit the idea.
 				Idea idea = new Idea();
 
-				idea.Title = editText(R.id.editTextTitle).getText().toString().trim();
+				idea.Title = getInputText(R.id.editTextTitle);
 				if (idea.Title.equals(""))
 				{
-					showInformation("请填写标题");
+					showInformation(R.string.please_input_title);
 					return;
 				}
 				
-				idea.Content = editText(R.id.editTextContent).getText().toString().trim();
+				idea.Content = getInputText(R.id.editTextContent);
 				if (idea.Content.equals(""))
 				{
-					showInformation("请填写内容");
+					showInformation(R.string.please_input_content);
 					return;
 				}
 				
@@ -46,12 +46,12 @@ public class SubmitIdeaActivity extends ActivityBase
 				
 				if (service.submitIdea(idea))
 				{
-					showInformation("发布成功");
+					showInformation(R.string.submit_success);
 					context.finish();
 				}
 				else
 				{
-					showInformation("发布失败");
+					showInformation(R.string.submit_fail);
 				}
 			}
 		});

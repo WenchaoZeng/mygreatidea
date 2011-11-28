@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 /**
- * Listen to on click event and jump to an target activity.
+ * Listen to onClick event and jump to an target activity.
  * @author ZengWenchao
  */
 public class ActivityLinkerOnClickListener implements OnClickListener
