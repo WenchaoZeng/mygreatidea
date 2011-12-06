@@ -1,4 +1,7 @@
-﻿using System;
+﻿/**
+ * This library will be hosted in https://code.google.com/p/caller/ project.
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using MyGreatIdea.Entities;
