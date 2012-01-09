@@ -55,5 +55,21 @@ namespace MyGreatIdea
                 return null;
             }
         }
+
+        /// <summary>
+        /// Execute a SQL command.
+        /// </summary>
+        /// <param name="sqlCommand">The SQL statement.</param>
+        /// <param name="parameters">Parameter values which will be used in the SQL statement.</param>
+        /// <returns></returns>
+        public int ExecuteUpdate(string sqlCommand, params object[] parameters)
+        {
+            OleDbCommand command = new OleDbCommand(sqlCommand, _connection);
+            foreach (object value in parameters)
+            {
+                command.Parameters.AddWithValue("?", value);
+            }
+            return command.ExecuteNonQuery();
+        }
     }
 }
